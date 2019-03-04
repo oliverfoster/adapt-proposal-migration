@@ -32,7 +32,7 @@ Adapt content is built using a single version of Adapt Framework and associated 
 3. Run script to migrate data
 4. Import course into new Authoring Tool instance
 
-### Data requirements
+### Outline requirements
 * Starting version numbers of framework + plugins (export derivable)
 * Finishing version number of framework + plugins (not easy)
 * Plugin migration behaviour (lives in the plugin)
