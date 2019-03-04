@@ -1,34 +1,43 @@
 # adapt-proposal-migration
 A proposal for achieving version migration for Adapt Framework content
 
-## Problem
-Adapt content is built using a single version of Adapt Framework and associated plugins. Authoring Tool users have a set of courses built against one version of Adapt Framework and associated plugins that need to be periodically upgraded to a new framework and plugin version. Currently this process suffers when certain changes occure
+### Problem
+Adapt content is built using a single version of Adapt Framework and associated plugins. Authoring Tool users have a set of courses built against one version of Adapt Framework and associated plugins. In both environments it is neccessary to periodically upgrade the framework and plugin version. Currently this process can result, to various degrees, in broken courses.
 
-## Affected languages
+### Affected areas
 * JSON - schema changes
-  * framework > framework - verson change (simple upgrade)
-  * plugin > plugin - version change or plugin exchange (plugin upgrade, obscelesence or direct replacement)
-  * framework <> plugin - features moved between the framework and a plugin (spoor + tracking)
+  * framework <> framework - simple upgrade or downgrade
+  * plugin <> plugin - plugin upgrade, obscelesence or direct replacement
+  * framework <> plugin - features moved between the framework and plugins (spoor + tracking)
 * LESS - themes with version-specific plugin overrides
 
-## Future discussions
+### Future discussions
 * Migrating Authoring Tool JSON in the database using server-side database scripts
 * Supporting multiple framework and plugin versions in a single Authoring Tool instance
 * Allowing batch imports from one Authoring Tool instance to another
 
-## Current suggested first steps
-* Hold off on major Authoring Tool migration amends
-* Rely on existing import and export behaviour
-* Allow the Authoring Tool to import mismatched versions by including a warning for the user
+### Current suggested first steps
+* No major Authoring Tool migration amends
+* Use existing import and export behaviour
+* Allow Authoring Tool to import mismatched versions by adding a warning for the user
 * Provide a framework based mechanism to migrate JSON from one framework and plugin version to another
+* Don't worry about theme migration at present
+* Don't worry about downgrading plugins
 
-## Suggestion workflow
+### Suggestion workflow
 1. Setup new Authoring Tool instance with new framework and plugin versions
 2. Export course from old Authoring Tool instance
 3. Run script to migrate data
-  * Warn about non-existant plugin
-  
 4. Import course into new Authoring Tool instance
+
+### Data requirements
+* Starting version numbers of framework + plugins
+* Finishing version number of framework + plugins
+* Plugin migration behaviour
+* Custom migration behaviour
+* Conflict resolution rules 
+  * Non-existant plugin
+  * Alternative plugin
 
 
 
