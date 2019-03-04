@@ -36,12 +36,10 @@ Adapt content is built using a single version of Adapt Framework and associated 
 * Starting version numbers of framework + plugins (export derivable)
 * Finishing version number of framework + plugins (not easy)
 * Plugin migration behaviour (lives in the plugin)
-* Custom migration behaviour (provide a mechanism for custom run migration-time behaviour)  
-  * Alternative plugin (1:1 component / extension exchange)  
-  * Manually define plugin migration  
-* Plugin conflict resolution:
+* Custom migration behaviour (provide a mechanism for custom migration-time behaviour)  
+* Plugin conflict resolution
   * Non-existent plugin (warn, end or swap for text)
-  * No migration behaviour available (end, swap for text)
+  * No migration behaviour available (end or swap for text)
 
 
 
