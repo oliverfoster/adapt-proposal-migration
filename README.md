@@ -22,25 +22,26 @@ Adapt content is built using a single version of Adapt Framework and associated 
 * Don't worry about downgrading plugins
 
 ### Current suggested first steps
-* Use existing import and export behaviour
-* Allow Authoring Tool to import mismatched versions by adding a warning for the user
+* Use existing Authoring Tool import and export behaviours
+* Allow Authoring Tool to import mismatched versions by adding a UI warning for the users
 * Provide a framework based mechanism to migrate JSON from one framework and plugin version to another
 
-### Suggestion workflow
+### Suggested workflow
 1. Setup new Authoring Tool instance with new framework and plugin versions
 2. Export course from old Authoring Tool instance
 3. Run script to migrate data
 4. Import course into new Authoring Tool instance
 
 ### Data requirements
-* Starting version numbers of framework + plugins
-* Finishing version number of framework + plugins
-* Plugin migration behaviour
-* Custom migration behaviour
-* Conflict resolution rules 
-  * Non-existant plugin
-  * Alternative plugin
-  * No migration behaviour available
+* Starting version numbers of framework + plugins (export derivable)
+* Finishing version number of framework + plugins (not easy)
+* Plugin migration behaviour (lives in the plugin)
+* Custom migration behaviour (provide a mechanism for custom run migration-time behaviour)
+ * Alternative plugin (1:1 component / extension exchange)
+ * Manually define plugin migration
+* Plugin conflict resolution:
+  * Non-existent plugin (warn, end or swap for text)
+  * No migration behaviour available (end, swap for text)
 
 
 
