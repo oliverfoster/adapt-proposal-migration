@@ -38,6 +38,7 @@ Adapt content is built using a single version of Adapt Framework and associated 
 * Conflict resolution rules 
   * Non-existant plugin
   * Alternative plugin
+  * No migration behaviour available
 
 
 
