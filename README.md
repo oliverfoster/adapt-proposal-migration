@@ -16,13 +16,15 @@ Adapt content is built using a single version of Adapt Framework and associated 
 * Supporting multiple framework and plugin versions in a single Authoring Tool instance
 * Allowing batch imports from one Authoring Tool instance to another
 
-### Current suggested first steps
+### Current exclusions
 * No major Authoring Tool migration amends
+* Don't worry about theme migration at present
+* Don't worry about downgrading plugins
+
+### Current suggested first steps
 * Use existing import and export behaviour
 * Allow Authoring Tool to import mismatched versions by adding a warning for the user
 * Provide a framework based mechanism to migrate JSON from one framework and plugin version to another
-* Don't worry about theme migration at present
-* Don't worry about downgrading plugins
 
 ### Suggestion workflow
 1. Setup new Authoring Tool instance with new framework and plugin versions
