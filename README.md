@@ -2,7 +2,7 @@
 A proposal for achieving version migration for Adapt Framework content
 
 ### Problem
-Adapt content is built using a single version of Adapt Framework and associated plugins. Authoring Tool users have a set of courses built against one version of Adapt Framework and associated plugins. In both environments it is neccessary to periodically upgrade the framework and plugin version. Currently this process can result, to various degrees, in broken courses.
+Adapt content is built using a single version of Adapt Framework and associated plugins. Authoring Tool users have a set of courses built against one version of Adapt Framework and associated plugins. In both environments it is neccessary to periodically upgrade the framework and plugin version. Currently this process can result, in varying degrees, to broken courses.
 
 ### Affected areas
 * JSON - schema changes
