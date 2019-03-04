@@ -42,6 +42,9 @@ Adapt content is built using a single version of Adapt Framework and associated 
 * Starting version numbers of framework + plugins (derivable from start framework/plugin)
 * Finishing version numbers of framework + plugins (derivable from end framework/plugin)
 * Plugin migration behaviour (should live in end framework/plugin)
+  * Only specify changes from>to version (use semver to match)
+  * Do not declare versions with no changes
+  * Allow multiple conversions if applying multiple changes
 * Custom migration behaviour (provide a mechanism for custom migration-time behaviour)  
 * Plugin conflict resolution
   * Non-existent plugin (warn, end or swap for text)
