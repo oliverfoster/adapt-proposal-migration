@@ -1,7 +1,7 @@
 # adapt-proposal-migration
 A proposal for achieving version migration for Adapt Framework content
 
-### Problem
+## Problem
 Adapt content is built using a single version of Adapt Framework and associated plugins. Authoring Tool users have a set of courses built against one version of Adapt Framework and associated plugins. In both environments it is neccessary to periodically upgrade the framework and plugin version. Currently this process can result in broken courses.
 
 ### Affected areas
@@ -11,15 +11,19 @@ Adapt content is built using a single version of Adapt Framework and associated 
   * framework <> plugin - features moved between the framework and plugins (spoor + tracking)
 * LESS - themes with version-specific plugin overrides
 
-### Future discussions
+### On hold
+* Major Authoring Tool migration behaviour
+* Theme migrations
+* Downgrading plugins
+
+### Interim discussions
 * Migrating Authoring Tool JSON in the database using server-side database scripts
+
+### Future discussions
 * Supporting multiple framework and plugin versions in a single Authoring Tool instance
 * Allowing batch imports from one Authoring Tool instance to another
 
-### Current exclusions
-* No major Authoring Tool migration amends
-* Don't worry about theme migration at present
-* Don't worry about downgrading plugins
+## Proposal
 
 ### First steps
 * Use existing Authoring Tool import and export behaviours
