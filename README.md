@@ -37,9 +37,11 @@ Adapt content is built using a single version of Adapt Framework and associated 
 4. Import course into new Authoring Tool instance
 
 ### Outline
-* Starting version numbers of framework + plugins (export derivable)
-* Finishing version numbers of framework + plugins (not easy)
-* Plugin migration behaviour (should live in the plugin)
+* Start framework + plugins
+* End framework + plugins
+* Starting version numbers of framework + plugins (derivable from start framework/plugin)
+* Finishing version numbers of framework + plugins (derivable from end framework/plugin)
+* Plugin migration behaviour (should live in end framework/plugin)
 * Custom migration behaviour (provide a mechanism for custom migration-time behaviour)  
 * Plugin conflict resolution
   * Non-existent plugin (warn, end or swap for text)
